@@ -8,7 +8,7 @@ use HidalgoRides\SlackNotifier\SlackAttachment;
 
 class SlackPayloadGenerator {
 
-    public function generate($message, array $attachments) : array
+    public function generate($message, array $attachments = []) : array
     {
         $payload = ['text' => $message];
 

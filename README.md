@@ -29,7 +29,7 @@ Once you have your Webhook URL, you can create a new instance of the `SlackNotif
 $webhookAPI = 'https://hooks.slack.com/services/Txxxxxx/Byyyyyyy/Zzzzzzzzz';
 
 // new SlackNotifier instance
-$slackNotifier = new HidalgoRides\SlackNotifier\SlackNotifier($webhookAPI);
+$slackNotifier = new \HidalgoRides\SlackNotifier\SlackNotifier($webhookAPI);
 ```
 
 ### Sending Messages
@@ -47,15 +47,17 @@ $slackNotifier->sendMessage('First message using Slack Notifier!');
 For the complete Slack message attachment documentation, see the following link: https://api.slack.com/docs/message-attachments
 
 ```php
-$slackAttachment = new HidalgoRides\SlackNotifier\SlackAttachment();
+$slackAttachment = new \HidalgoRides\SlackNotifier\SlackAttachment();
 $slackAttachment
     ->setAuthorName('Author name goes here')
     ->setAuthorLinkUrl('https://example.com/author')
     ->setAuthorIconUrl('https://img.icons8.com/ultraviolet/48/000000/soy.png')
     ->setColor('#222222')
+    ->setFallbackText('Fallback goes here')
     ->setFooterIconUrl('https://img.icons8.com/color/48/000000/soy.png')
     ->setFooterText('Footer text goes here')
     ->setImageUrl('https://img.icons8.com/color/400/000000/soy.png')
+    ->setPretext('Pretext goes here')
     ->setText('Attached using Slack Notifier!')
     ->setThumbnailUrl('https://img.icons8.com/ultraviolet/96/000000/soy.png')
     ->setTitle('Title goes here')
@@ -69,13 +71,13 @@ $slackNotifier->sendMessage('First message with attachments using Slack Notifier
 #### Attachment Actions
 
 ```php
-$slacActionConfirmation = new HidalgoRides\SlackNotifier\SlackActionConfirmation();
+$slacActionConfirmation = new \HidalgoRides\SlackNotifier\SlackActionConfirmation();
 $slacActionConfirmation->setDismissButtonText('Dismiss')
     ->setOkButtonText('Confirm')
     ->setText('Confirmation Text')
     ->setTitle('Confirmation Title');
 
-$slackAction = new HidalgoRides\SlackNotifier\SlackAction();
+$slackAction = new \HidalgoRides\SlackNotifier\SlackAction();
 $slackAction->setStyle('primary')
     ->setType('button')
     ->setText('Click Me with Confirmation')
@@ -83,7 +85,7 @@ $slackAction->setStyle('primary')
     ->setName('action-name')
     ->setConfirmation($slacActionConfirmation);
 
-$slackAttachment = new HidalgoRides\SlackNotifier\SlackAttachment();
+$slackAttachment = new \HidalgoRides\SlackNotifier\SlackAttachment();
 $slackAttachment->setActions([$slackAction]);
 
 $slackNotifier->sendMessage('First message attachment containing actions using Slack Notifier!', [
@@ -94,11 +96,11 @@ $slackNotifier->sendMessage('First message attachment containing actions using S
 #### Attachment Fields
 
 ```php
-$slackField = new HidalgoRides\SlackNotifier\SlackField();
+$slackField = new \HidalgoRides\SlackNotifier\SlackField();
 $slackField->setTitle('Field Title')
     ->setValue('Field Value');
 
-$slackAttachment = new HidalgoRides\SlackNotifier\SlackAttachment();
+$slackAttachment = new \HidalgoRides\SlackNotifier\SlackAttachment();
 $slackAttachment->setFields([$slackField]);
 
 $slackNotifier->sendMessage('First message attachment containing fields using Slack Notifier!', [

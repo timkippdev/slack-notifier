@@ -9,16 +9,16 @@ class SlackAttachment {
     private $authorLinkUrl;
     private $authorName;
     private $color;
-    private $imageUrl;
     private $fallbackText;
     private $fields = [];
     private $footerIconUrl;
     private $footerText;
+    private $imageUrl;
     private $pretext;
     private $text;
+    private $thumbnailUrl;
     private $title;
     private $titleLinkUrl;
-    private $thumbnailUrl;
 
     public function getActions() : array
     {
