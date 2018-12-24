@@ -1,6 +1,6 @@
 # Slack Notifier
 
-Slack Notifier utilitizes Slack's Incoming Webhooks feature to post messages directly to a Slack channel of your choosing through your individual Slack app Webhook URL.
+Slack Notifier utilitizes Slack's [Incoming Webhooks](https://slack.com/apps/A0F7XDUAZ-incoming-webhooks) feature to post messages directly to a Slack channel of your choosing through your individual Slack app Webhook URL.
 
 ## Installation
 
@@ -20,7 +20,7 @@ See the following instructions provided by Slack to create your app, if needed, 
 
 https://api.slack.com/incoming-webhooks#getting-started
 
-### Setup SlackNotifier Instance
+### Setup `SlackNotifier` Instance
 
 Once you have your Webhook URL, you can create a new instance of the `SlackNotifier` class:
 
