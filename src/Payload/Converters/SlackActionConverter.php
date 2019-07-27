@@ -1,9 +1,9 @@
 <?php
 
-namespace HidalgoRides\SlackNotifier\Payload\Converters;
+namespace TimKippDev\SlackNotifier\Payload\Converters;
 
-use HidalgoRides\SlackNotifier\SlackAction;
-use HidalgoRides\SlackNotifier\Payload\Converters\SlackActionConfirmationConverter;
+use TimKippDev\SlackNotifier\SlackAction;
+use TimKippDev\SlackNotifier\Payload\Converters\SlackActionConfirmationConverter;
 
 class SlackActionConverter {
 

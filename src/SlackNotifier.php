@@ -1,12 +1,12 @@
 <?php
 
-namespace HidalgoRides\SlackNotifier;
+namespace TimKippDev\SlackNotifier;
 
 use GuzzleHttp\Client;
-use HidalgoRides\SlackNotifier\SlackField;
-use HidalgoRides\SlackNotifier\SlackAction;
-use HidalgoRides\SlackNotifier\SlackAttachment;
-use HidalgoRides\SlackNotifier\Payload\SlackPayloadGenerator;
+use TimKippDev\SlackNotifier\SlackField;
+use TimKippDev\SlackNotifier\SlackAction;
+use TimKippDev\SlackNotifier\SlackAttachment;
+use TimKippDev\SlackNotifier\Payload\SlackPayloadGenerator;
 
 class SlackNotifier {
 

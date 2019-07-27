@@ -1,9 +1,9 @@
 <?php
 
-namespace HidalgoRides\SlackNotifier\Payload;
+namespace TimKippDev\SlackNotifier\Payload;
 
-use HidalgoRides\SlackNotifier\SlackAttachment;
-use HidalgoRides\SlackNotifier\Payload\Converters\SlackAttachmentConverter;
+use TimKippDev\SlackNotifier\SlackAttachment;
+use TimKippDev\SlackNotifier\Payload\Converters\SlackAttachmentConverter;
 
 class SlackPayloadGenerator {
 

@@ -4,12 +4,12 @@ namespace Tests\Payload;
 
 use Mockery\MockInterface;
 use PHPUnit\Framework\TestCase;
-use HidalgoRides\SlackNotifier\SlackField;
-use HidalgoRides\SlackNotifier\SlackAction;
-use HidalgoRides\SlackNotifier\SlackAttachment;
-use HidalgoRides\SlackNotifier\SlackActionConfirmation;
-use HidalgoRides\SlackNotifier\Payload\SlackPayloadGenerator;
-use HidalgoRides\SlackNotifier\Payload\Converters\SlackAttachmentConverter;
+use TimKippDev\SlackNotifier\SlackField;
+use TimKippDev\SlackNotifier\SlackAction;
+use TimKippDev\SlackNotifier\SlackAttachment;
+use TimKippDev\SlackNotifier\SlackActionConfirmation;
+use TimKippDev\SlackNotifier\Payload\SlackPayloadGenerator;
+use TimKippDev\SlackNotifier\Payload\Converters\SlackAttachmentConverter;
 
 class SlackPayloadGeneratorTest extends TestCase {
 

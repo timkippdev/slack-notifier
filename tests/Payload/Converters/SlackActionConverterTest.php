@@ -4,10 +4,10 @@ namespace Tests\Payload\Converters;
 
 use Mockery\MockInterface;
 use PHPUnit\Framework\TestCase;
-use HidalgoRides\SlackNotifier\SlackAction;
-use HidalgoRides\SlackNotifier\SlackActionConfirmation;
-use HidalgoRides\SlackNotifier\Payload\Converters\SlackActionConverter;
-use HidalgoRides\SlackNotifier\Payload\Converters\SlackActionConfirmationConverter;
+use TimKippDev\SlackNotifier\SlackAction;
+use TimKippDev\SlackNotifier\SlackActionConfirmation;
+use TimKippDev\SlackNotifier\Payload\Converters\SlackActionConverter;
+use TimKippDev\SlackNotifier\Payload\Converters\SlackActionConfirmationConverter;
 
 class SlackActionConverterTest extends TestCase {
 

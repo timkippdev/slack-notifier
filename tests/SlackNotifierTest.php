@@ -5,9 +5,9 @@ namespace Tests;
 use GuzzleHttp\Client;
 use Mockery\MockInterface;
 use PHPUnit\Framework\TestCase;
-use HidalgoRides\SlackNotifier\SlackNotifier;
-use HidalgoRides\SlackNotifier\Payload\SlackPayloadGenerator;
-use HidalgoRides\SlackNotifier\SlackAttachment;
+use TimKippDev\SlackNotifier\SlackNotifier;
+use TimKippDev\SlackNotifier\Payload\SlackPayloadGenerator;
+use TimKippDev\SlackNotifier\SlackAttachment;
 
 class SlackNotifierTest extends TestCase {
 

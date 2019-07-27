@@ -1,12 +1,12 @@
 <?php
 
-namespace HidalgoRides\SlackNotifier\Payload\Converters;
+namespace TimKippDev\SlackNotifier\Payload\Converters;
 
-use HidalgoRides\SlackNotifier\SlackField;
-use HidalgoRides\SlackNotifier\SlackAction;
-use HidalgoRides\SlackNotifier\SlackAttachment;
-use HidalgoRides\SlackNotifier\Payload\Converters\SlackFieldConverter;
-use HidalgoRides\SlackNotifier\Payload\Converters\SlackActionConverter;
+use TimKippDev\SlackNotifier\SlackField;
+use TimKippDev\SlackNotifier\SlackAction;
+use TimKippDev\SlackNotifier\SlackAttachment;
+use TimKippDev\SlackNotifier\Payload\Converters\SlackFieldConverter;
+use TimKippDev\SlackNotifier\Payload\Converters\SlackActionConverter;
 
 class SlackAttachmentConverter {
 

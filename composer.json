@@ -1,9 +1,9 @@
 {
-    "name": "hidalgo-rides/slack-notifier",
+    "name": "timkippdev/slack-notifier",
     "description": "PHP client built for integrating with Slack's Incoming Webhooks",
     "type": "library",
     "license": "MIT",
-    "keywords": ["hidalgorides", "slack", "notifier", "incoming", "webhooks"],
+    "keywords": ["timkippdev", "slack", "notifier", "incoming", "webhooks"],
     "authors": [
       {
         "name": "Tim Kipp",
@@ -20,7 +20,7 @@
     },
     "autoload" : {
       "psr-4" : {
-        "HidalgoRides\\SlackNotifier\\" : "src/"
+        "TimKippDev\\SlackNotifier\\" : "src/"
       }
     },
     "autoload-dev" : {

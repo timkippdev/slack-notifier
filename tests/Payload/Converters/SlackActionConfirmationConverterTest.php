@@ -3,8 +3,8 @@
 namespace Tests\Payload\Converters;
 
 use PHPUnit\Framework\TestCase;
-use HidalgoRides\SlackNotifier\SlackActionConfirmation;
-use HidalgoRides\SlackNotifier\Payload\Converters\SlackActionConfirmationConverter;
+use TimKippDev\SlackNotifier\SlackActionConfirmation;
+use TimKippDev\SlackNotifier\Payload\Converters\SlackActionConfirmationConverter;
 
 class SlackActionConfirmationConverterTest extends TestCase {
 

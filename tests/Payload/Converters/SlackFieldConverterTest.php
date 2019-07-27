@@ -3,8 +3,8 @@
 namespace Tests\Payload\Converters;
 
 use PHPUnit\Framework\TestCase;
-use HidalgoRides\SlackNotifier\SlackField;
-use HidalgoRides\SlackNotifier\Payload\Converters\SlackFieldConverter;
+use TimKippDev\SlackNotifier\SlackField;
+use TimKippDev\SlackNotifier\Payload\Converters\SlackFieldConverter;
 
 class SlackFieldConverterTest extends TestCase {
 

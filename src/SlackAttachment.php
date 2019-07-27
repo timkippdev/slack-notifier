@@ -1,6 +1,6 @@
 <?php
 
-namespace HidalgoRides\SlackNotifier;
+namespace TimKippDev\SlackNotifier;
 
 class SlackAttachment {
 

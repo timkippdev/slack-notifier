@@ -29,7 +29,7 @@ Once you have your Webhook URL, you can create a new instance of the `SlackNotif
 $webhookAPI = 'https://hooks.slack.com/services/Txxxxxx/Byyyyyyy/Zzzzzzzzz';
 
 // new SlackNotifier instance
-$slackNotifier = new \HidalgoRides\SlackNotifier\SlackNotifier($webhookAPI);
+$slackNotifier = new \TimKippDev\SlackNotifier\SlackNotifier($webhookAPI);
 ```
 
 ### Sending Messages
@@ -47,7 +47,7 @@ $slackNotifier->sendMessage('First message using Slack Notifier!');
 For the complete Slack message attachment documentation, see the following link: https://api.slack.com/docs/message-attachments
 
 ```php
-$slackAttachment = new \HidalgoRides\SlackNotifier\SlackAttachment();
+$slackAttachment = new \TimKippDev\SlackNotifier\SlackAttachment();
 $slackAttachment
     ->setAuthorName('Author name goes here')
     ->setAuthorLinkUrl('https://example.com/author')
@@ -71,13 +71,13 @@ $slackNotifier->sendMessage('First message with attachments using Slack Notifier
 #### Attachment Actions
 
 ```php
-$slackActionConfirmation = new \HidalgoRides\SlackNotifier\SlackActionConfirmation();
+$slackActionConfirmation = new \TimKippDev\SlackNotifier\SlackActionConfirmation();
 $slackActionConfirmation->setDismissButtonText('Dismiss')
     ->setOkButtonText('Confirm')
     ->setText('Confirmation Text')
     ->setTitle('Confirmation Title');
 
-$slackAction = new \HidalgoRides\SlackNotifier\SlackAction();
+$slackAction = new \TimKippDev\SlackNotifier\SlackAction();
 $slackAction->setStyle('primary')
     ->setType('button')
     ->setText('Click Me with Confirmation')
@@ -85,7 +85,7 @@ $slackAction->setStyle('primary')
     ->setName('action-name')
     ->setConfirmation($slackActionConfirmation);
 
-$slackAttachment = new \HidalgoRides\SlackNotifier\SlackAttachment();
+$slackAttachment = new \TimKippDev\SlackNotifier\SlackAttachment();
 $slackAttachment
     ->setText('Attached using Slack Notifier!')
     ->setActions([$slackAction]);
@@ -98,11 +98,11 @@ $slackNotifier->sendMessage('First message attachment containing actions using S
 #### Attachment Fields
 
 ```php
-$slackField = new \HidalgoRides\SlackNotifier\SlackField();
+$slackField = new \TimKippDev\SlackNotifier\SlackField();
 $slackField->setTitle('Field Title')
     ->setValue('Field Value');
 
-$slackAttachment = new \HidalgoRides\SlackNotifier\SlackAttachment();
+$slackAttachment = new \TimKippDev\SlackNotifier\SlackAttachment();
 $slackAttachment
     ->setText('Attached using Slack Notifier!')
     ->setFields([$slackField]);

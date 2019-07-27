@@ -1,8 +1,8 @@
 <?php
 
-namespace HidalgoRides\SlackNotifier;
+namespace TimKippDev\SlackNotifier;
 
-use HidalgoRides\SlackNotifier\SlackActionConfirmation;
+use TimKippDev\SlackNotifier\SlackActionConfirmation;
 
 class SlackAction {
 
