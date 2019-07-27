@@ -9,7 +9,7 @@ These instructions assume you already have Composer installed on your machine or
 Install through Composer:
 
 ```bash
-composer require hidalgo-rides/slack-notifier
+composer require timkippdev/slack-notifier
 ```
 
 ## Usage
