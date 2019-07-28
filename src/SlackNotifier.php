@@ -3,9 +3,6 @@
 namespace TimKippDev\SlackNotifier;
 
 use GuzzleHttp\Client;
-use TimKippDev\SlackNotifier\SlackField;
-use TimKippDev\SlackNotifier\SlackAction;
-use TimKippDev\SlackNotifier\SlackAttachment;
 use TimKippDev\SlackNotifier\Payload\SlackPayloadGenerator;
 
 class SlackNotifier {
@@ -17,6 +14,12 @@ class SlackNotifier {
     private $slackPayloadGenerator;
 
     private $webhookURL;
+
+    public static function sendMessageToChannel($webhookURL, $message, array $attachments = [])
+    {
+        $instance = new static($webhookURL);
+        $instance->send($message, $attachments);
+    }
 
     public function __construct($webhookURL)
     {

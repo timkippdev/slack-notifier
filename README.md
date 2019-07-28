@@ -32,14 +32,24 @@ $webhookAPI = 'https://hooks.slack.com/services/Txxxxxx/Byyyyyyy/Zzzzzzzzz';
 $slackNotifier = new \TimKippDev\SlackNotifier\SlackNotifier($webhookAPI);
 ```
 
+> You can also choose to invoke the static `sendMessageToChannel` method instead of creating your own instance.
+
 ### Sending Messages
 
 Now that you have your `SlackNotifier` instance created, you can use it to send a message with optional attachments to the channel configured from your Webhook URL.
 
-#### Simple Message
+#### Simple Message Using Instance Method
 
 ```php
 $slackNotifier->sendMessage('First message using Slack Notifier!');
+```
+
+#### Simple Message Using Static Method
+
+We provide a static method to invoke to easily send messages to different channels so you are not tied down to a single instance.
+
+```php
+\TimKippDev\SlackNotifier\SlackNotifier::sendMessageToChannel($webhookAPI, 'First message using Slack Notifier!');
 ```
 
 #### Message with Attachments
@@ -63,7 +73,13 @@ $slackAttachment
     ->setTitle('Title goes here')
     ->setTitleLinkUrl('https://example.com/title');
 
+// with instance method
 $slackNotifier->sendMessage('First message with attachments using Slack Notifier!', [
+    $slackAttachment
+]);
+
+// with static method
+\TimKippDev\SlackNotifier\SlackNotifier::sendMessageToChannel($webhookAPI, 'First message using Slack Notifier!', [
     $slackAttachment
 ]);
 ```
@@ -90,7 +106,13 @@ $slackAttachment
     ->setText('Attached using Slack Notifier!')
     ->setActions([$slackAction]);
 
+// with instance method
 $slackNotifier->sendMessage('First message attachment containing actions using Slack Notifier!', [
+    $slackAttachment
+]);
+
+// with static method
+\TimKippDev\SlackNotifier\SlackNotifier::sendMessageToChannel($webhookAPI, 'First message using Slack Notifier!', [
     $slackAttachment
 ]);
 ```
@@ -107,7 +129,13 @@ $slackAttachment
     ->setText('Attached using Slack Notifier!')
     ->setFields([$slackField]);
 
+// with instance method
 $slackNotifier->sendMessage('First message attachment containing fields using Slack Notifier!', [
+    $slackAttachment
+]);
+
+// with static method
+\TimKippDev\SlackNotifier\SlackNotifier::sendMessageToChannel($webhookAPI, 'First message using Slack Notifier!', [
     $slackAttachment
 ]);
 ```
